@@ -1,0 +1,41 @@
+    1  pqd
+    2  pwd
+    3  sudo fdisk -l
+    4  exit
+    5  fdisk -l
+    6  sudo fdisk -l
+    7  ls -l
+    8  cat $HOME/ .ssh/*.pub
+    9  git clone git@github.com:Ruiz2107/TP2_Ruiz_Nicolas.git
+   10  m
+   11  sudo fdisk /dev/sdd
+   12  sudo fdisk -l
+   13  free
+   14  free -h
+   15  sudo mkswap /dev/sdd1
+   16  free -h
+   17  sudo swapon /dev/sdd1
+   18  free -h
+   19  swapon -s
+   20  cat /proc/swaps
+   21  sudo fdisk /dev/sdc
+   22  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   23  sudo pvs
+   24  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   25  sudo vgs
+   26  sudo pvs
+   27  sudo vgcreate vg_web /dev/sdc2
+   28  sudo pvs
+   29  sudo lvcreate -L 1G vg_web -n lv_web1
+   30  sudo lvcreate -L 512M vg_web -n lv_web2
+   31  sudo lvcreate -L 512M vg_web -n lv_web3
+   32  sudo lvs
+   33  sudo pvs
+   34  sudo fdisk -l
+   35  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   36  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   37  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   38  sudo pvs > pvs.txt
+   39  sudo vgs > vgs.txt
+   40  sudo lvs > lvs.txt
+   41  history > historial_lvm.txt
